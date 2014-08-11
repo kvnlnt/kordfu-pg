@@ -1,5 +1,10 @@
 node_modules
-phonegap
+phonegap/hooks
+phonegap/merges
+phonegap/platforms
+phonegap/plugins
+phonegap/www/modules
+phonegap/www/fonts
 .tmp
 .sass-cache
 bower_components
