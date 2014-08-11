@@ -8,7 +8,7 @@ module.exports = {
             'modules/lodash/dist/lodash.compat.min.js',
             'modules/teoria/dist/teoria.min.js',
             'modules/howler/howler.min.js',
-            'modules/hammerjs/hammer.min.js',
+            'modules/hammer/hammer.min.js',
             'modules/plukit/plukit.js',
             'modules/pickl/dist/pickl.min.js',
             'modules/tabulous/dist/tabulous.min.js',
