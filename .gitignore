@@ -1,0 +1,5 @@
+node_modules
+phonegap
+.tmp
+.sass-cache
+bower_components

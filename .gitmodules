@@ -1,0 +1,30 @@
+[submodule "modules/plukit"]
+	path = modules/plukit
+	url = https://github.com/kvnlnt/plukit.git
+[submodule "modules/tabulous"]
+	path = modules/tabulous
+	url = https://github.com/kvnlnt/Tabulous.git
+[submodule "modules/pickl"]
+	path = modules/pickl
+	url = https://github.com/kvnlnt/pickl.git
+[submodule "modules/hammer"]
+	path = modules/hammer
+	url = https://github.com/hammerjs/hammer.js.git
+[submodule "modules/howler"]
+	path = modules/howler
+	url = https://github.com/goldfire/howler.js.git
+[submodule "modules/snapsvg"]
+	path = modules/snapsvg
+	url = https://github.com/adobe-webplatform/Snap.svg.git
+[submodule "modules/teoria"]
+	path = modules/teoria
+	url = https://github.com/kvnlnt/teoria.git
+[submodule "modules/jquery"]
+	path = modules/jquery
+	url = https://github.com/kvnlnt/jquery-2.1.2.git
+[submodule "modules/lodash"]
+	path = modules/lodash
+	url = https://github.com/lodash/lodash.git
+[submodule "modules/lucille"]
+	path = modules/lucille
+	url = https://github.com/kvnlnt/lucille.git
