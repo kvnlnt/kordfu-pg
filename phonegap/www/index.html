@@ -10,15 +10,40 @@
 </head>
 
 <body>
+    <a style="color:white" id="play" href="#">play</a>
     <div id="addWrapper">
         <a id="add">
             <i class="fa fa-plus"></i>
         </a>
     </div>
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
 
         var kordfu = new Kordfu();
         kordfu.init(); 
+
+        // Wait for device API libraries to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+             // Create Media object from src
+            mp3 = new Media('/android_asset/www/modules/plukit/gtr_elec_dist.mp3', onSuccess, onError);
+
+            $("#play").on('click', function(){
+                mp3.play();
+            });
+
+            function onSuccess() { console.log("playAudio():Audio Success"); }
+
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
+            }
+
+        }
 
     </script>
 </body>

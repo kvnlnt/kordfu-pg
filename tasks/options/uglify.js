@@ -1,12 +1,12 @@
 module.exports = {
-    dist: {
+    plukit: {
 		options: {
 			beautify : {
 			    ascii_only : true
 			} 		
 		},
 		files: {
-			'dist/lucille.min.js': ['dist/lucille.js']
+			'modules/plukit/plukit.min.js': ['modules/plukit/plukit.js']
 		}
     }
 }

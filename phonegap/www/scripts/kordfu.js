@@ -12,7 +12,7 @@ var Kordfu = function(options){
 
 Kordfu.prototype.addLucille = function(e){
 
-	var lucille = new Lucille();
+	var lucille = new Lucille({ samplePath:'/android_asset/www/modules/plukit/' });
 	this.lucilles.push(lucille);
 
 	this.DOM.addWrapper.insertAfter($('.lucille').last());
