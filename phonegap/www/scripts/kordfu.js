@@ -11,13 +11,34 @@ var Kordfu = function(options){
 };
 
 Kordfu.prototype.addLucille = function(e){
+	
+	// Create plukit based on platform
+	var platform = "undefined" === typeof device ? 'browser' : device.platform; // figure out device
 
-	var lucille = new Lucille({ samplePath:'/android_asset/www/modules/plukit/' });
+	// set path based on platform
+	switch(platform){
+		case 'Android':
+			var path = '/android_asset/www/modules/plukit/';
+			break;
+		default:
+			var path = 'modules/plukit/';
+			break;
+	}
+
+	// create plukit object with above
+	var plukit  = new Plukit({ sampleFile:PLUKIT.guitar.acoustic.steel.mp3, samplePath:path, device:platform });
+
+	// create new lucille
+	var lucille = new Lucille({ plukit:plukit });
+
+	// add to collection
 	this.lucilles.push(lucille);
 
+	// insert into DOM
 	this.DOM.addWrapper.insertAfter($('.lucille').last());
 
-	return this.lucilles;
+	// return lucille object
+	return lucille;
 
 }
 
