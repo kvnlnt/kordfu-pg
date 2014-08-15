@@ -9,10 +9,10 @@ module.exports = {
             'modules/teoria/dist/teoria.min.js',
             'modules/howler/howler.min.js',
             'modules/hammer/hammer.min.js',
-            'modules/plukit/plukit.min.js',
+            'modules/plukit/plukit.js',
             'modules/pickl/dist/pickl.min.js',
             'modules/tabulous/dist/tabulous.min.js',
-            'modules/lucille/dist/lucille.min.js'],
+            'modules/lucille/dist/lucille.js'],
       dest: 'phonegap/www/libs.js',
     },
 }
