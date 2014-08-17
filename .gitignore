@@ -3,8 +3,7 @@ phonegap/hooks
 phonegap/merges
 phonegap/platforms
 phonegap/plugins
-phonegap/www/modules
-phonegap/www/fonts
+phonegap/www
 .tmp
 .sass-cache
 bower_components
