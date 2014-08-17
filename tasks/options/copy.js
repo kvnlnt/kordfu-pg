@@ -8,13 +8,13 @@ module.exports = {
     fonts:{
         expand: true, 
         src: ['fonts/**'], 
-        dest: 'phonegap/www/fonts/'
+        dest: 'phonegap/www'
     },
 
-    samples: {
+    plukit: {
         cwd:'modules/plukit',
         src:'*.mp3',
-        dest: 'phonegap/www/samples/',
+        dest: 'phonegap/www/modules/plukit',
         flatten:true,
         expand:true
     }

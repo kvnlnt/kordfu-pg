@@ -4,11 +4,13 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'useminPrepare',
         'copy:html',
-        'copy:samples',
+        'copy:plukit',
         'copy:fonts',
         'concat:generated',
         'uglify:generated',
         'usemin'
     ]);
+
+    grunt.registerTask('phonegap',['build','exec'])
     
 };
