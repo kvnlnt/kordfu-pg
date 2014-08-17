@@ -1,10 +1,23 @@
 module.exports = {
-    plukit: {
+
+    html: {
+        src: 'index.html',
+        dest: 'phonegap/www/index.html'
+    },
+
+    fonts:{
+        expand: true, 
+        src: ['fonts/**'], 
+        dest: 'phonegap/www/fonts/'
+    },
+
+    samples: {
         cwd:'modules/plukit',
         src:'*.mp3',
-        dest: 'phonegap/www/modules/plukit/',
+        dest: 'phonegap/www/samples/',
         flatten:true,
         expand:true
     }
+    
 }
 

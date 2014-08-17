@@ -1,0 +1,6 @@
+- more chord options
+- more tuning options
+- android deployment
+    - icons
+    - class structure?
+    - 

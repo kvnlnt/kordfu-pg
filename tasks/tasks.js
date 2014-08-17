@@ -1,5 +1,14 @@
 module.exports = function(grunt) {
 
-    grunt.registerTask('compile', ['uglify:plukit','concat:libs','copy:plukit']);
+    // simple build task
+    grunt.registerTask('build', [
+        'useminPrepare',
+        'copy:html',
+        'copy:samples',
+        'copy:fonts',
+        'concat:generated',
+        'uglify:generated',
+        'usemin'
+    ]);
     
 };

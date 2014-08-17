@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Kordfu</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+
+    <!-- build:js vendor.min.js -->
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="vendor/teoria.js"></script>
+    <script type="text/javascript" src="vendor/snap.js"></script>
+    <script type="text/javascript" src="vendor/lodash.js"></script>
+    <script type="text/javascript" src="vendor/howler.js"></script>
+    <script type="text/javascript" src="vendor/hammer.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js modules.min.js -->
+    <script type="text/javascript" src="modules/pickl/scripts/pickl.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/config.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/render.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/calculations.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/displays.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/save.js"></script>
+    <script type="text/javascript" src="modules/pickl/scripts/themes.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/tabulous.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/getters.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/setters.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/printers.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/calc.js"></script>
+    <script type="text/javascript" src="modules/tabulous/scripts/filters.js"></script>
+    <script type="text/javascript" src="modules/plukit/plukit.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/lucille.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/fixtures.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/instruments.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/calculations.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/renders.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/displays.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/play.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/updates.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/translators.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/getters.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/trackers.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/destroyers.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/configurations.js"></script>
+    <script type="text/javascript" src="modules/lucille/scripts/themes.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js kordfu.min.js -->
+    <script type="text/javascript" src="scripts/kordfu.js"></script>
+    <script type="text/javascript" src="scripts/theme.js"></script>
+    <script type="text/javascript" src="scripts/debug.js"></script>
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <div id="addWrapper">
+        <a id="add">
+            <i class="fa fa-plus"></i>
+        </a>
+    </div>
+    <div id="debug" style="color:white"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript"> 
+
+        // Wait for device API libraries to load
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        function onDeviceReady() {
+
+            var kordfu = new Kordfu();
+            kordfu.init();
+
+        }
+
+        // if a browser, manually start
+        if("undefined" === typeof device){
+            onDeviceReady();
+        }
+
+    </script>
+
+</body>
+
+</html>

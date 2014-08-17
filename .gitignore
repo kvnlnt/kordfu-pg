@@ -8,3 +8,4 @@ phonegap/www/fonts
 .tmp
 .sass-cache
 bower_components
+vendor
