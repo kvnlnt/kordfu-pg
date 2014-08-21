@@ -40,13 +40,14 @@ Kordfu.prototype.themeLoad = function(){
 
 		// header
 
-			add('nav', 'color:'+style.textColor);
-			add('nav', 'font-family:\'VarelaRound\';');
+			add('nav, p, a', 'color:'+style.textColor);
+			add('nav, p, a', 'font-family:\'VarelaRound\';');
 			add('nav', 'line-height: 3rem;');
 			add('nav', 'height:0');
-			add('nav', 'text-align:center; margin:0; cursor:pointer;');
+			add('nav, p, a', 'text-align:center; margin:0; cursor:pointer;');
 			add('nav h1', 'margin:0; display:inline-block;');
 			add('nav button', 'font-family:FontAwesome; margin:0 1rem; font-size: 1rem; color: #FFFFFF; background: transparent; border: 0; cursor: pointer;');
+			add('p', 'margin:1rem; font-size: 0.85rem; opacity: 0.5;');
 			add('#add','font-family:\'VarelaRound\'; display:inline-block; padding:0 1rem; color:'+style.background+'; font-size:1rem; line-height:2rem; background-color:' + style.accent + '; cursor:pointer; border-radius:0.2rem;');
 			add('#add:hover', 'background:'+style.textColor+';');
 			add('#add .fa', 'line-height:3rem;');
