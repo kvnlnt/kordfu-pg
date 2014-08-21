@@ -11,6 +11,7 @@ Kordfu.prototype.theme = function(){
 	var zen = { 
 		background:'#000000',
 		textColor:'#FFFFFF',
+		accent:'#FF0000'
 	};
 
 	return {
@@ -34,7 +35,7 @@ Kordfu.prototype.themeLoad = function(){
 
 		// backgrounds
 
-			add('html, body', 'margin:0; padding:0; width:100%; height:100%;');
+			add('html, body', 'margin:0 0 3rem; padding:0;');
 			add('body','background: '+style.background + '; text-align:center;');
 
 		// header
@@ -46,10 +47,10 @@ Kordfu.prototype.themeLoad = function(){
 			add('nav', 'text-align:center; margin:0; cursor:pointer;');
 			add('nav h1', 'margin:0; display:inline-block;');
 			add('nav button', 'font-family:FontAwesome; margin:0 1rem; font-size: 1rem; color: #FFFFFF; background: transparent; border: 0; cursor: pointer;');
-			add('#add','display:inline-block; opacity:0.25; width:3rem; height:3rem; font-size:1.5rem; line-height:3rem; background-color:' + style.textColor + '; cursor:pointer; border-radius:3rem;');
-			add('#add:hover', 'opacity:1;');
+			add('#add','font-family:\'VarelaRound\'; display:inline-block; padding:0 1rem; color:'+style.background+'; font-size:1rem; line-height:2rem; background-color:' + style.accent + '; cursor:pointer; border-radius:0.2rem;');
+			add('#add:hover', 'background:'+style.textColor+';');
 			add('#add .fa', 'line-height:3rem;');
-			add('#addWrapper', 'margin:2rem;');
+			add('#footer', 'margin:0rem;');
 
 		// lucille
 

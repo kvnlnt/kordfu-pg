@@ -1,15 +1,7 @@
 module.exports = {
-
-    bash:{
-        command : 'source ~/.bash_profile'
-    },
     
-    cd: {
-        command : 'cd phonegap'
-    },
-
-    run:{
-        command : 'cordova run'
+    run: {
+        command : 'source ~/.bash_profile && cd /Users/kevinlint/Dev/kordfu/phonegap && cordova run'
     }
 
 }

@@ -35,7 +35,7 @@ Kordfu.prototype.addLucille = function(e){
 	this.lucilles.push(lucille);
 
 	// insert into DOM
-	this.DOM.addWrapper.insertAfter($('.lucille').last());
+	this.DOM.footer.insertAfter($('.lucille').last());
 
 	// return lucille object
 	return lucille;
@@ -48,7 +48,7 @@ Kordfu.prototype.init = function() {
 	
 	// DOM
 	this.DOM.add        = $("#add");
-	this.DOM.addWrapper = $("#addWrapper");
+	this.DOM.footer = $("#footer");
 
 	// EVENTS
 	this.DOM.add.on('click', function(){ that.addLucille() });
