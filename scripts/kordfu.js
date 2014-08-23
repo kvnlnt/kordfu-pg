@@ -54,7 +54,12 @@ Kordfu.prototype.init = function() {
 	this.DOM.add.on('click', function(){ that.addLucille() });
 
 	// initializers
-	this.themeLoad();
 	this.addLucille();
+	if(mode === 'device') analytics.startTrackerWithId('UA-34866302-6');
+
+	// fade out splash
+	setTimeout(function(){
+		$("#splash").fadeOut();
+	}, 2000);
 
 };

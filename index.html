@@ -54,6 +54,9 @@
 </head>
 
 <body>
+    <div id="splash">
+        <div id="cover"><h1>kordfu</h1><p>The ninja chord finder</p></div>
+    </div>
     <div id="footer">
         <a id="add">
             <i class="fa fa-plus"></i>
@@ -67,14 +70,13 @@
     <script type="text/javascript"> 
 
         // Wait for device API libraries to load
-        document.addEventListener("deviceready", onDeviceReady, false);
+        var mode = typeof device === "undefined" ? 'browser' : 'device';
+        var kordfu = new Kordfu();
+        kordfu.themeLoad();
+        document.addEventListener("deviceready", kordfu.init, false);
 
-        // device APIs are available
-        function onDeviceReady() {
-
-            var kordfu = new Kordfu();
+        if(mode === 'browser'){
             kordfu.init();
-
         }
 
     </script>

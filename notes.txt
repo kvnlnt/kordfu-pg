@@ -1,6 +1,19 @@
-- more chord options
-- more tuning options
-- android deployment
-    - icons
-    - class structure?
-    - 
+Kordfu
+    - more chord options
+    - more tuning options
+    - android deployment
+        - logo
+
+Pickl
+    - Note selection not showing on phone...but other cats work fine
+
+Lucille:
+    - alt chord types not rendering
+
+Tabulous:
+    #s inversion switch failing because it's translating to b
+    F Major looks like crap
+    alt tunings don't work
+    ostrich and dobro tuning freaks out
+    d chords not right...might need condition for open chords, or just crawl every fret and remove unfingerables
+    keep crawling for alternate frettings on open strings up to breadth of 5
