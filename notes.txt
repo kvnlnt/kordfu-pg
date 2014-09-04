@@ -7,9 +7,16 @@ Kordfu
 Pickl
     - Note selection not showing on phone...but other cats work fine
 
-Lucille:
-    - alt chord types not rendering
-
 Tabulous:
-    alt tunings don't work
-    ostrich and dobro tuning freaks out
+
+    - C minor 8th fret is calling the 5th/G string inactive
+    - needs to filter chords that contain at least ALL the note in the chord else, it can't distinguish between C Major and C7 or C6
+    - reimpliment inversions, maybe just call it inactive...because some inversions might be needed especially for unconventional chords in which inversions are standard or less notes than required to play the chord are available at a particular fret position.
+    - CM7 only plays 2 notes, misses first position
+    - alt tunings don't work
+    - ostrich and dobro tuning freaks out
+
+
+BUG FIXES:
+
+    - C minor doesn't work because too many positions are considered unplayable...strings need to be filtered out to find fit voicings, filter down until not using min strings. TURNED OUT TO BE TWO THINGS: COUNING INACTIVE STRINGS AND A NATIVE JS SORT

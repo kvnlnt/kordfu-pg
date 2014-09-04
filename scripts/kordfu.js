@@ -47,7 +47,7 @@ Kordfu.prototype.init = function() {
 	var that = this;
 	
 	// DOM
-	this.DOM.add        = $("#add");
+	this.DOM.add    = $("#add");
 	this.DOM.footer = $("#footer");
 
 	// EVENTS
